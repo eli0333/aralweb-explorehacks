@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!--Google fonts stylesheets-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--Font Awesome icons source-->
+    <script src="https://kit.fontawesome.com/138518a1c2.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <!--Website automatically calls generateQuiz() function upon loading to display quiz-->
+  <body id="quizPage" onload = generateQuiz()>
+
+    <script src="quiz.js"></script>
+    
+
+    <!--Website navigation bar-->
+
+     <div class = "navbar">
+      <ul class = "navbar-content">
+        <li><a style="color: #2D2E27;" href = "index.html"><i class="fas fa-cube"></i><b>ARAL</b>Web</a></li>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "simulation.html">Simulations</a></li>
+        <li><a href = "skeletal.html">Learn</a></li>
+        <li><a href = "quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+
+<!--Next portion contains contents of quiz-->
+  <div class = "quiz-container">
+
+      <br>
+      <!--Heading for the quiz page-->
+      <h1 class="simul-heading" id="quiztitle">Skeletal System Quiz</h1>
+      <br>
+      
+      <!--Next portion contains quiz questions and choices-->
+      <div class = "quiz-box">
+
+      <div class="quiz-content">
+        <img src = "Bones/skullb.png" id="quizpic">
+      </div>
+    
+      <div class="quiz-content">
+        <h2 id="quizQuestion">What part of the skeletal system is this?</h2>
+        <br>
+        <!--Each choice calls proceed('id') function upon clicking to properly manage user input-->
+        <h3 id = "choice1" onclick = "proceed('choice1')">Skull</h3>
+
+        <h3 id ="choice2" onclick = "proceed('choice2')">Ribs</h3>
+        
+        <h3 id ="choice3" onclick = "proceed('choice3')">Scapula</h3>
+        <br>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--Website footer-->
+  <div class = "footer">
+      <div class = "footer-icon">
+        <a href="https://devpost.com/software/aralweb"><img src = "Pictures/devpost.png"/></a>
+      </div>
+      <div class = "footer-icon">
+        <a href="https://github.com/eli0333/aralweb-explorehacks"><img src = "Pictures/github.jpg"/></a>
+      </div>
+      <div class = "footer-icon">
+        <a href="https://www.echoar.xyz/"><img src = "Pictures/echoar.png"/></a>
+      </div>
+      <div class = "footer-icon">
+        <a href="https://docs.google.com/document/d/1zB0TymfuWj8BR8ctgElWBuWNW25CWnkuV4hndtU_wFY/edit?usp=sharing"><img src = "Pictures/gdocs.png"/></a>
+      </div>
+    </div>
+
+  </body>
+</html>
